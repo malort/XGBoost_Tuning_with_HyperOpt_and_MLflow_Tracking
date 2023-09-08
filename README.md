@@ -1,8 +1,20 @@
 # XGBoost_Tuning_with_HyperOpt_and_MLflow_Tracking
 
-### Intro:
+## Intro:
 
-### Requirements:
+This project aims to develop a binary classification model using XGBoost, a powerful gradient boosting algorithm, to predict a target variable with two distinct classes. The model will be tuned using Hyperopt to find the best combination of hyperparameters that maximizes the model's performance. HyperOpt is a Python library for hyperparameter optimization that can balance model performance and computational resource limitations by searching for optimal parameters in a non-exhaustive way. MLflow will be utilized to track the experimentation process and manage the model's lifecycle.
+
+Databricks is a unified, open analytics platform for building, deploying, sharing, and maintaining enterprise-grade data, analytics, and AI solutions at scale.
+
+The optimization method used is the Tree-structured Parzen Estimator (TPE) which is widely used in recent parameter tuning frameworks. TPE is a sequential model-based optimization (SMBO) approach that sequentially constructs models to approximate the performance of hyperparameters based on historical measurements and then subsequently chooses new hyperparameters to test based on this model.
+
+## Data: 
+
+The original dataset can be found here:
+
+https://archive.ics.uci.edu/ml/datasets/credit+approval
+
+## Requirements:
 
 
 ```XGBoost:``` XGBoost is a popular machine learning library that provides scalable and efficient implementations of gradient boosting algorithms. It is designed to be highly customizable and provides a number of hyperparameters that can be tuned to improve performance.
