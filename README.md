@@ -2,9 +2,11 @@
 
 ## Intro:
 
-This project aims to develop a binary classification model using XGBoost, a powerful gradient boosting algorithm, to predict a target variable with two distinct classes. The model will be tuned using Hyperopt to find the best combination of hyperparameters that maximizes the model's performance. HyperOpt is a Python library for hyperparameter optimization that can balance model performance and computational resource limitations by searching for optimal parameters in a non-exhaustive way. MLflow will be utilized to track the experimentation process and manage the model's lifecycle.
+This project aims to develop a binary classification model using XGBoost, a powerful gradient boosting algorithm, to predict a target variable with two distinct classes. The model will be tuned using Hyperopt to find the best combination of hyperparameters that maximizes the model's performance. 
 
-Databricks is a unified, open analytics platform for building, deploying, sharing, and maintaining enterprise-grade data, analytics, and AI solutions at scale.
+The project was developed using the Databricks platform, a unified, open analytics platform for building, deploying, sharing, and maintaining enterprise-grade data, analytics, and AI solutions at scale.
+
+HyperOpt is a Python library for hyperparameter optimization that can balance model performance and computational resource limitations by searching for optimal parameters in a non-exhaustive way. MLflow will be utilized to track the experimentation process and manage the model's lifecycle.
 
 The optimization method used is the Tree-structured Parzen Estimator (TPE) which is widely used in recent parameter tuning frameworks. TPE is a sequential model-based optimization (SMBO) approach that sequentially constructs models to approximate the performance of hyperparameters based on historical measurements and then subsequently chooses new hyperparameters to test based on this model.
 
@@ -13,6 +15,10 @@ The optimization method used is the Tree-structured Parzen Estimator (TPE) which
 The original dataset can be found here:
 
 https://archive.ics.uci.edu/ml/datasets/credit+approval
+
+To simplify the project, the data has been processed previously. All the prior steps can be seen in the following project:
+
+https://github.com/malort/PySpark-Pipeline-Model
 
 ## Requirements:
 
